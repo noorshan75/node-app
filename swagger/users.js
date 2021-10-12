@@ -198,21 +198,11 @@
  *     description: add user into db
  *     tags:
  *      - Users
- *     parameters: [
- *        {
- *          name: 'x-access-token',
- *          in: 'header',
- *          schema: {
- *           type: 'string'
- *          },
- *          required: true
- *        }
- *     ]
  *     requestBody:
  *       description: Form data Details
  *       required: true
  *       content:
- *         multipart/form-data:
+ *         application/json:
  *           schema:
  *             $ref: '#/definitions/addUserBody'
  *     responses:
